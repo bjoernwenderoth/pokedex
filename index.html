@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="img/icon_pokeball.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
+    <script src="color.js"></script>
+    <script src="template.js"></script>
+</head>
+
+<body onload="init()">
+    <section class="d-none loadingScreen" id="loadingScreen">
+        <div class="loader"></div>
+    </section>
+    <header id="header" class="container-head d_flex_c_c column">
+        <div class="header">
+            <h1>POKEDEX</h1>
+            <img src="./img/poke_logo.png" alt="poke_logo">
+        </div>
+        <input type="text" id="search" placeholder="Pokemon suchen..." oninput="search(this.value)">
+    </header>
+
+    <section id="sectionSinglePokemon" class="d-none"></section>
+
+
+
+    </section>
+
+
+
+
+    <section id="sectionAllPokemon" class="d_flex_c_c column">
+        <div class="container-allPokemon d_flex_c_c max-width" id="container-allPokemon"></div>
+
+        <div class="button-container">
+            <button onclick="init()" class="buttonloadMore">Mehr Pokemon</button>
+        </div>
+    </section>
+
+
+
+    <footer id="footer" class="column">
+        <a href="#">
+            <h4>IMPRESSUM</h4>
+        </a>
+        <span>2024 Pokédex by Björn Wenderoth</span>
+    </footer>
+</body>
+
+</html>
